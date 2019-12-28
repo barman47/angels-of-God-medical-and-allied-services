@@ -1,0 +1,106 @@
+.slider {
+    .slides .caption {
+        left: 0 !important;
+        top: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .slides .slide1-caption {
+        color: $off-white;
+        font-weight: $title-weight;
+        margin-top: 10rem;
+    }
+
+    .slides .slide2-caption {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: $orange;
+        font-weight: $title-weight;
+        margin-top: 10rem;
+        margin-left: $lg;
+        padding: $sm;
+        width: 60%;
+    }
+
+    .slides .slide3-caption {
+        margin-left: $lg;
+        margin-top: 10rem;
+    }
+
+    .slides .slide4-caption {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: $primary-color;
+        margin-top: 15rem;
+        margin-left: $lg;
+        padding: $normal;
+        width: 80%;
+    }
+
+    .slides .slide4-caption + a {
+        background-color: $primary-color;
+        box-shadow: $shadow;
+        color: $off-white;
+        border-radius: 3px;
+        display: inline-block;
+        padding: $normal $lg !important;
+        margin-top: $lg;
+        transition: 0.3s linear all;
+    }
+    .slides .slide4-caption + a:hover {
+        background-color: darken($primary-color, 10%);
+        box-shadow: $shadow;
+    }
+
+    .slides .slide5-caption {
+        color: $black;
+        font-weight: $title-weight;
+        margin-top: $xxlg;
+    }
+
+    .slides .slide7-caption {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: $link-color;
+        margin-top: 20rem;
+    }
+
+    .slides .first-slide a {
+        background-color: $secondary-color;
+        box-shadow: $shadow;
+        color: $off-white;
+        border-radius: 3px;
+        display: inline-block;
+        padding: $normal $lg !important;
+        margin-top: $lg;
+        transition: 0.3s linear all;
+    }
+    .slides .first-slide a:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .slides .slide7-caption {
+        padding: $sm;
+        font-size: $md;
+    }   
+}
+
+@media (max-width: $md-breakpoint) {
+    .slides .slide1-caption {
+        font-size: $md;
+    }
+
+    .slides .slide2-caption {
+        font-size: $sm;
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .slides .slide4-caption {
+        font-size: $sm;
+    }
+
+    .slides .slide7 {
+        
+    }
+}

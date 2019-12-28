@@ -1,0 +1,48 @@
+footer {
+    background-color: $dark-gray;
+    color: darken($off-white, 30%);
+    display: flex !important;
+    font-family: $roboto-condensed;
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding: $lg;
+
+    ul {
+        display: flex;
+    }
+
+    ul li {
+        margin-left: $sm;
+    }
+
+    ul li a {
+        color: darken($off-white, 30%);
+        transition: 0.3s linear all;
+    }
+
+    ul li a:visited {
+        color: darken($off-white, 30%);
+    }
+
+    ul li a:hover {
+        color: $off-white;
+    }
+
+    ul li a:active {
+        color: $primary-color;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    footer {
+        justify-content: center;
+    }
+    
+    footer p {
+        font-size: 0.7rem !important;
+    }
+
+    footer ul {
+        display: none;
+    }
+} 

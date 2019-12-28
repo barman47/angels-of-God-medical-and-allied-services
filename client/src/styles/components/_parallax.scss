@@ -1,0 +1,32 @@
+.parallax {
+    background-image: url(../../assets/img/God.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 600px;
+
+    h3 {
+        color: $orange;
+        background-color: rgba(0, 0, 0, .5);
+        margin: 0 auto;
+        padding: $sm;
+        position: relative;
+        top: 45%;
+        width: 50%;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .parallax h3 {
+        width: 85% !important;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .parallax h3 {
+        font-size: $sm;
+        width: 90% !important;
+    }
+}
