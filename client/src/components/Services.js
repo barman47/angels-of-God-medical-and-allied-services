@@ -14,7 +14,7 @@ const Services = (props) => {
             <p className="services-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, amet provident! Corporis sint excepturi temporibus labore repellendus impedit.</p>
             <div className="services">
                 <div className="service">
-                    <img src={OverseaStudies} alt="Admission & Visa for Oversea Studies" />
+                    <img src={OverseaStudies} className="responsive-img" alt="Admission & Visa for Oversea Studies" />
                     <h5>Admissions &amp; Visa for Oversea Studies</h5>
                     <p>An opportunity to achieve your vision, by studying your dream course anywhere overseas.</p>
                 </div>
@@ -24,24 +24,24 @@ const Services = (props) => {
                     <p>Health is wealth, so your health with us and stay wealthy.</p>
                 </div>
                 <div className="service">
-                    <img src={GeneralMerchandise} alt="General Merchandise" />
+                    <img src={GeneralMerchandise} className="responsive-img" alt="General Merchandise" />
                     <h5>General Merchandise</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, omnis?</p>
+                    <p>We are committed to serve the needs of our customers, in order to facilitate continuous growth in business worldwide.</p>
                 </div>
                 <div className="service">
-                    <img src={ImportExport} alt="Import & Export" />
+                    <img src={ImportExport} className="responsive-img" alt="Import & Export" />
                     <h5>Import &amp; Export</h5>
                     <p>Your go to support system for developing import and export capacity.</p>
                 </div>
                 <div className="service">
-                    <img src={EstateDevelopment} alt="Estate Development" />
+                    <img src={EstateDevelopment} className="responsive-img" alt="Estate Development" />
                     <h5>Estate Development</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, omnis?</p>
+                    <p>We provide landscapes and structures embedded with aesthetic integrity that goes beyond your imagination.</p>
                 </div>
                 <div className="service">
-                    <img src={OilAndGas} alt="Oil and Gas Services" />
+                    <img src={OilAndGas} className="responsive-img" alt="Oil and Gas Services" />
                     <h5>Oil &amp; Gas Services</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, omnis?</p>
+                    <p>We are well equipped to facilitate your oil and gas operations within and beyond the country.</p>
                 </div>
             </div>
         </section>

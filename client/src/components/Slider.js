@@ -54,8 +54,7 @@ const Slider = (props) => {
                 <li>
                     <img src={slide6} alt="Slide 6" />
                     <div className="caption center-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 className="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        <h3 className="slide6-caption">Comfortable living environments with easy accessibility</h3>
                     </div>
                 </li>
                 <li>
