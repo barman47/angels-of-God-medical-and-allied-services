@@ -1,6 +1,6 @@
 const express = require('express');
 // const mongoose = require('mongoose');it 
-const passport = require('passport');
+// const passport = require('passport');
 const path = require('path');
 // const { database_URI } = require('./config/keys');
 
@@ -22,10 +22,10 @@ const PORT = process.env.PORT || 5000;
 //     .catch(err => console.log(err));
 
 // Passport middleware
-app.use(passport.initialize());
+// app.use(passport.initialize());
 
 // Passport config
-require('./config/passport')
+// require('./config/passport')
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -36,12 +36,6 @@ app.use('/api/users', users);
 
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(publicPath, 'index.html'));
-});
-
-app.get('/', (req, res) => {
-    res.send({
-        message: 'Hello World!'
-    });
 });
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}!`));
