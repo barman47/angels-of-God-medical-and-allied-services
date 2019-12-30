@@ -7,11 +7,11 @@ import ImportExport from '../assets/img/import-export.jpg';
 import EstateDevelopment from '../assets/img/estate-development.jpg';
 import OilAndGas from '../assets/img/oil-and-gas.jpg';
 
-const Services = (props) => {
+const Services = () => {
     return (
         <section className="services-section">
             <h4 className="services-header">Our Offe<span className="underline">red Ser</span>vices</h4>
-            <p className="services-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, amet provident! Corporis sint excepturi temporibus labore repellendus impedit.</p>
+            <p className="services-text">Our services include but are not limited to the following</p>
             <div className="services">
                 <div className="service">
                     <img src={OverseaStudies} className="responsive-img" alt="Admission & Visa for Oversea Studies" />
@@ -21,7 +21,7 @@ const Services = (props) => {
                 <div className="service">
                     <img src={MedicalTrip} alt="Oversea Medical Trips" />
                     <h5>Oversea Medical Trips</h5>
-                    <p>Health is wealth, so your health with us and stay wealthy.</p>
+                    <p>Health is wealth, so entrust your health with us and stay wealthy.</p>
                 </div>
                 <div className="service">
                     <img src={GeneralMerchandise} className="responsive-img" alt="General Merchandise" />

@@ -9,7 +9,7 @@ const Header = (props) => {
     }, []);
 
     return (
-        <>
+        <div className="navbar-fixed">
             <nav>
                 <div className="nav-wrapper">
                     <Link to="#" className="sidenav-trigger" data-target="mobile-menu"><span className="mdi mdi-menu mdi-24px menu-icon"></span></Link>
@@ -31,7 +31,7 @@ const Header = (props) => {
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/services">Services</Link></li>
             </ul>
-        </>
+        </div>
     );
 }
 

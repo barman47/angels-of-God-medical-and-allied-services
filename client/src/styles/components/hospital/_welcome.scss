@@ -1,0 +1,130 @@
+.welcome-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    div h5 {
+        font-family: $roboto-condensed;
+        font-weight: $subtitle-weight;
+    }
+
+    div h4 {
+        font-weight: $subtitle-weight;
+    }
+
+    div:first-child {
+        padding: $xlg;
+    }
+
+    div:first-child img {
+        width: 25rem;
+        height: 80%;
+    }
+
+    div:first-child img:last-child {
+        position: relative;
+        top: -30%;
+        left: 18rem;
+    }
+
+    div:last-child {
+        margin-top: $lg;
+    }
+
+    div:last-child ul {
+        margin-top: $sm;
+        margin-bottom: $lg;
+        font-weight: $subtitle-weight;
+    }
+
+    div:last-child .welcome-list-icon {
+        color: $secondary-color;
+        margin-right: $normal;
+    }
+
+    div:last-child a {
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        border-radius: 3px;
+        margin-top: $sm;
+        padding: $xs $normal;
+        transition: 0.3s linear all;
+    }
+
+    div:last-child a:visited {
+        color: $secondary-color;
+        background-color: transparent;
+        box-shadow: $shadow;
+    }
+
+    div:last-child a:hover {
+        background-color: $secondary-color;
+        color: $off-white;
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .welcome-section div:last-child  {
+        padding-right: $md;
+    }
+
+    .welcome-section div:last-child h5 {
+        font-size: $md;
+        line-height: 1.4;
+    }
+
+    .welcome-section div:first-child img:last-child {
+        left: 10rem;
+    }
+
+}
+
+@media (max-width: $md-breakpoint) {
+    .welcome-section {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section div:first-child {
+        height: 40rem;
+    }
+
+    .welcome-section div:first-child img:first-child {
+        position: relative;
+        left: 10%;
+    }
+
+    .welcome-section div:first-child img:last-child {
+        top: -45% !important;
+        left: 15rem;
+    }
+
+    .welcome-section div:last-child {
+        background-color: transparentize($secondary-color, 0.9);
+        padding-left: $md;
+        padding-right: $md;
+        padding-bottom: $lg;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .welcome-section {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-section div img {
+        width: 100%;
+    }
+
+    .welcome-section div:first-child {
+        padding: $normal;
+        margin-bottom: $xlg;
+    }
+
+    .welcome-section div:first-child img:first-child {
+        left: 0;
+    }
+
+    .welcome-section div:first-child img:last-child {
+        top: -45% !important;
+        left: 0;
+    }
+}

@@ -1,0 +1,99 @@
+.health-services-title {
+    background-color: transparentize($secondary-color, 0.8);
+    color: $off-black;
+    font-family: $roboto-condensed;
+    margin: 0;
+    margin-top: -20rem;
+    padding-bottom: $sm;
+    padding-top: $sm;
+    text-align: center;
+}
+
+.hospital-services {
+    color: $white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .service {
+        padding: $sm;
+    }
+
+    .service h5 {
+        font-weight: $title-weight;
+    }
+
+    .service p {
+        color: $off-white;
+    }
+
+    span {
+        font-size: $xlg;
+    }
+
+    .service:first-child {
+        background-color: #ff7f50;
+    }
+
+    .service:nth-child(2) {
+        background-color: #2282e8;
+    }
+
+    .service:nth-child(3) {
+        background-color: #ed9600;
+    }
+
+    .service:nth-child(4) {
+        background-color: #72a81a;
+    }
+
+    .service:nth-child(5) {
+        background-color: $primary-color;
+    }
+
+    .service:last-child {
+        background-color: #bba7db;
+    }
+    // .service:first-child {
+    //     background-color: lighten($primary-color, 10%);
+    // }
+
+    // .service:nth-child(2) {
+    //     background-color: $primary-color;
+    // }
+
+    // .service:nth-child(3) {
+    //     background-color: lighten($primary-color, 10%);
+    // }
+
+    // .service:nth-child(4) {
+    //     background-color: $primary-color;
+    // }
+
+    // .service:nth-child(5) {
+    //     background-color: lighten($primary-color, 10%);
+    // }
+
+    // .service:last-child {
+    //     background-color: $primary-color;
+    // }
+}
+
+@media (max-width: $md-breakpoint) {
+    .health-services-title {
+        margin-top: 0;
+    }
+
+    .hospital-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .hospital-services {
+        grid-template-columns: 1fr;
+    }
+
+    .health-services-title {
+        font-size: $md;
+    }
+}

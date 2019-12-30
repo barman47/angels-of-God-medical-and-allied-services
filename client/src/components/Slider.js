@@ -9,7 +9,7 @@ import slide5 from '../assets/img/slide5.jpg';
 import slide6 from '../assets/img/slide6.jpg';
 import slide7 from '../assets/img/slide7.jpg';
 
-const Slider = (props) => {
+const Slider = () => {
     useEffect(() => {
         const elems = document.querySelectorAll('.slider');
         //eslint-disable-next-line

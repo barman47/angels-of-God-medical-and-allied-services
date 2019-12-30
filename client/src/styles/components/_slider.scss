@@ -28,7 +28,7 @@
     }
 
     .slides .slide4-caption {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: transparentize($white, 0.6);
         color: $primary-color;
         margin-top: 15rem;
         margin-left: $lg;
@@ -57,10 +57,19 @@
         margin-top: $xxlg;
     }
 
+    .slides .slide6-caption {
+        color: $orange;
+        background-color: transparentize($black, 0.7);
+        margin-top: 20rem;
+        padding: $sm;
+    }
+
     .slides .slide7-caption {
         background-color: rgba(0, 0, 0, 0.8);
         color: $link-color;
         margin-top: 20rem;
+        padding: $sm;
+
     }
 
     .slides .first-slide a {
@@ -100,7 +109,17 @@
         font-size: $sm;
     }
 
-    .slides .slide7 {
-        
+    .slides .slide6-caption {
+        color: $orange;
+        background-color: transparentize($black, 0.7);
+        font-size: $md;
+        margin-top: 20rem;
+        padding: $sm;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .slides .slide2-caption {
+        margin-top: 20rem !important;
     }
 }

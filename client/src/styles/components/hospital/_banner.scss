@@ -1,0 +1,42 @@
+.banner {
+    color: $white;
+    display: flex;
+    align-items: center;
+    background-image: url(../../../assets/img/hospital/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;  
+    
+    h2 {
+        font-family: $roboto-condensed;
+        font-weight: $title-weight;
+        margin: 0;
+    }
+
+    p {
+        color: $off-white;
+        margin-top: $lg;
+    }
+
+    div {
+        margin-left: $xlg;
+    }
+
+    button {
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 3px;
+        color: $off-white;
+        cursor: pointer;
+        box-shadow: $shadow;
+        font-family: $quicksand;
+        padding: $sm;
+        margin-top: $lg;
+        transition: 0.3s linear all;
+    }
+    button:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+}
