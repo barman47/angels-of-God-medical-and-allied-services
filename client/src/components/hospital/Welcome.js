@@ -13,11 +13,11 @@ const Welcome = () => (
         <div>
             <h5><span className="underline">Wel</span>come to Angels of God Medical Center</h5>
             <h4>Best Care for Your<br /> Good Health</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita iste suscipit consectetur dignissimos aut nesciunt, cum reiciendis sed recusandae ullam maxime quis minus earum.</p>
+            <p>The value of health can never be over emphasized, it is a  priceless asset that should be zealously protected.</p>
             <ul>
-                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Lorem ipsum dolor sit.</li>
-                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Lorem ipsum dolor sit.</li>
-                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Lorem ipsum dolor sit.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Antenal and post natal care.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Pharmaceutical services.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Intersive care and surgical unit.</li>
             </ul>
             <Link to="">Learn More</Link>
         </div>

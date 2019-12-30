@@ -22,7 +22,7 @@ const Services = () => (
             <div className="service">
                 <span className="mdi mdi-account-group"></span>
                 <h5>Family Planning</h5>
-                <p>the reproductive health of our client is of paramount importance to.</p>
+                <p>The reproductive health of our client is of paramount importance to us.</p>
             </div>
             <div className="service">
                 <span className="mdi mdi-bug-outline"></span>
@@ -32,7 +32,7 @@ const Services = () => (
             <div className="service">
                 <span className="mdi mdi-headset"></span>
                 <h5>Online Appointment</h5>
-                <p>Schedule and appointment with us from your comfort zone. Anytime, any day.</p>
+                <p>Schedule an appointment with us from your comfort zone. Anytime, any day.</p>
             </div>
         </div>
     </section>
