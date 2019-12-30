@@ -53,29 +53,6 @@
     .service:last-child {
         background-color: #bba7db;
     }
-    // .service:first-child {
-    //     background-color: lighten($primary-color, 10%);
-    // }
-
-    // .service:nth-child(2) {
-    //     background-color: $primary-color;
-    // }
-
-    // .service:nth-child(3) {
-    //     background-color: lighten($primary-color, 10%);
-    // }
-
-    // .service:nth-child(4) {
-    //     background-color: $primary-color;
-    // }
-
-    // .service:nth-child(5) {
-    //     background-color: lighten($primary-color, 10%);
-    // }
-
-    // .service:last-child {
-    //     background-color: $primary-color;
-    // }
 }
 
 @media (max-width: $md-breakpoint) {
@@ -95,5 +72,13 @@
 
     .health-services-title {
         font-size: $md;
+    }
+
+    .service {
+        text-align: center;
+    }
+
+    .service p {
+        text-align: justify;
     }
 }
