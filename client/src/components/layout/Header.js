@@ -6,6 +6,13 @@ const Header = (props) => {
         const elems = document.querySelectorAll('.sidenav');
         //eslint-disable-next-line
         const instances = M.Sidenav.init(elems, {});
+
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach((mobileLink) => {
+            mobileLink.addEventListener('click', (e) => {
+                setTimeout(instances[0].close(), 1000);
+            });
+        });
     }, []);
 
     return (
@@ -24,12 +31,12 @@ const Header = (props) => {
                 </div>
             </nav>
             <ul id="mobile-menu" className="sidenav">
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/" className="mobile-link">Home</Link></li>
                 <li className="divider"></li>
-                <li><Link to="/admissions">Admissions</Link></li>
-                <li><Link to="/medical-center">Medical Center</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/admissions" className="mobile-link">Admissions</Link></li>
+                <li><Link to="/medical-center" className="mobile-link">Medical Center</Link></li>
+                <li><Link to="/about" className="mobile-link">About</Link></li>
+                <li><Link to="/services" className="mobile-link">Services</Link></li>
             </ul>
         </div>
     );

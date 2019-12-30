@@ -10,6 +10,10 @@ body {
     overflow-x: hidden;
 }
 
+.sidenav-overlay {
+    z-index: 996;
+}
+
 .underline {
     border-bottom: 3px solid $secondary-color;
     font-size: unset;
