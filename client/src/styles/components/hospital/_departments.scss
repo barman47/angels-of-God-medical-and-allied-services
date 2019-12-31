@@ -1,0 +1,108 @@
+.departments {
+    
+    .header, .header-text {
+        text-align: center;
+    }
+
+    .header {
+        font-family: $roboto-condensed;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: $sm;
+        row-gap: $sm;
+        margin-top: $lg;
+        padding-left: $sm;
+        padding-right: $sm;
+    }
+
+    .department {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        box-shadow: $shadow;
+        overflow: hidden;
+        padding-bottom: $sm;
+    }
+
+    .department h6 {
+        color: $off-black;
+        margin-top: $sm;
+        font-weight: $title-weight;
+    }
+
+    .department h6, .department p, .department a {
+        margin-bottom: $xs;
+        padding-left: $sm;
+        padding-right: $sm;
+    }
+
+    .department div:first-child {
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 15rem;
+        transition: 0.3s linear all;
+    }
+
+    .department div:first-child:hover {
+        transform: scale(1.2);
+    }
+
+    .department:first-child div:first-child {
+        background-image: url(../../../assets/img/hospital/obstetrics.png);
+    }
+
+    .department:nth-child(2) div:first-child {
+        background-image: url(../../../assets/img/hospital/doctor.jpg);
+    }
+
+    .department:nth-child(3) div:first-child {
+        background-image: url(../../../assets/img/slide3.jpg);
+    }
+
+    .department:nth-child(4) div:first-child {
+        background-image: url(../../../assets/img/hospital/paediatrics.png);
+    }
+
+    .department:nth-child(5) div:first-child {
+        background-image: url(../../../assets/img/hospital/internal-medicine.jpg);
+    }
+
+    .department:nth-child(6) div:first-child {
+        background-image: url(../../../assets/img/hospital/laboratory.jpg);
+    }
+
+    .department:nth-child(7) div:first-child {
+        background-image: url(../../../assets/img/hospital/medical-psychology.jpg);
+    }
+    
+
+    .department:last-child div:first-child {
+        background-image: url(../../../assets/img/hospital/geriatrics.jpg);
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .departments .department div:first-child {
+        height: 10rem;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .departments section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .departments .department div:first-child {
+        height: 15rem;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .departments section {
+        grid-template-columns: 1fr;
+    }
+}
