@@ -1,0 +1,115 @@
+.doctors {
+    margin: $lg 0 $xxlg 0;
+
+    h4 {
+        font-family: $roboto-condensed;
+        font-weight: $subtitle-weight;
+        margin-bottom: $lg;
+        text-align: center;
+    }
+
+    .doctors-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: $lg;
+        padding-left: $xlg;
+        padding-right: $xlg;
+    }
+
+    .doctors-section .card-container {
+        overflow: hidden;
+    }
+
+    .doctors-section .doctor {
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        align-items: flex-end;
+        height: 25rem;
+        transition: 0.3s linear all;
+    }
+
+    .doctors-section .doctor:hover {
+        transform: scale(1.02);
+    }
+
+    .doctors-section .doctor:first-child {
+        background-image: url(../../../assets/img/me.jpg);
+    }
+    .doctors-section .doctor:nth-child(2) {
+        background-image: url(../../../assets/img/me.jpg);
+    }
+    .doctors-section .doctor:nth-child(3) {
+        background-image: url(../../../assets/img/me.jpg);
+    }
+    .doctors-section .doctor:last-child {
+        background-image: url(../../../assets/img/me.jpg);
+    }
+
+    .doctor div {
+        background-color: $off-white;
+        text-align: center;
+        padding-bottom: $normal;
+        width: 100%;
+    }
+
+    .doctor div:hover {
+        transform: none;
+        background-color: $primary-color;
+    }
+
+    .doctor div:hover h5, .doctor div:hover h6 {
+        color: white;
+    }
+
+    .doctor div h5 {
+        color: $off-black;
+        font-size: $sm;
+        font-weight: $subtitle-weight;
+    }
+    .doctor div h6 {
+        color: lighten($off-black, 40%);
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .doctors .doctors-section {
+        column-gap: $md;
+        padding-left: $lg;
+        padding-right: $lg;
+    }
+
+    .doctors .doctors-section .doctor {
+        height: 20rem;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .doctors .doctors-section {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: $lg;
+        row-gap: $lg;
+        padding-left: $xlg;
+        padding-right: $xlg;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .doctors .doctors-section {
+        grid-template-columns: 1fr;
+        row-gap: $lg;
+        padding-left: $md;
+        padding-right: $md;
+    }
+
+    .doctors .doctors-section .doctor {
+        height: 25rem;
+    }
+
+    .doctors .doctor div {
+        border: none;
+    }
+}
