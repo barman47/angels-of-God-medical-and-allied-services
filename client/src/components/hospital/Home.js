@@ -5,7 +5,7 @@ import Banner from './Banner';
 import HospitalServices from './HospitalServices';
 import Welcome from './Welcome';
 import Departments from './Departments';
-import Doctors from './Doctors';
+// import Doctors from './Doctors';
 import Contact from './Contact';
 
 const Home = () => (
@@ -15,7 +15,7 @@ const Home = () => (
         <Welcome />
         <HospitalServices />
         <Departments />
-        <Doctors />
+        {/* <Doctors /> */}
         <Contact />
     </>
 );

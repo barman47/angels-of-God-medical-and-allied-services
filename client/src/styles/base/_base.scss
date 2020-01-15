@@ -10,6 +10,25 @@ body {
     overflow-x: hidden;
 }
 
+a.call-contact {
+    border: 1px solid $white;
+    border-radius: $button-radius;
+    color: $white;
+    margin: $normal auto;
+    padding-top: $normal;
+    padding-bottom: $normal;
+    width: 20%;
+}
+
+a.call-contact:visited {
+    color: $white;
+}
+
+a.call-contact:hover {
+    background-color: $white;
+    color: $primary-color;
+}
+
 .sidenav-overlay {
     z-index: 996 !important;
 }
