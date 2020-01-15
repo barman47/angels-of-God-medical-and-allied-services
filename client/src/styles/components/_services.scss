@@ -86,5 +86,7 @@
 
     .services {
         grid-template-columns: 1fr !important;
+        padding-left: $sm !important;
+        padding-right: $sm !important;
     }
 }

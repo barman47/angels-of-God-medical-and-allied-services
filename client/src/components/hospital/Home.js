@@ -10,7 +10,7 @@ import Contact from './Contact';
 
 const Home = () => (
     <>
-        <Helmet><title>Angels of God Medical Center | Home - Angels of God Medical Center and Allied Services</title></Helmet>
+        <Helmet><title>Angels of God Medical Center | Angels of God Medical Center and Allied Services</title></Helmet>
         <Banner />
         <Welcome />
         <HospitalServices />

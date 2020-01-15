@@ -8,7 +8,7 @@ const Contact = () => (
                     <h5>For Any Emergency</h5>
                     <p>Contact us anytime, any day.</p>
                 </div>
-                <button>+234 7033501199</button>
+                <a className="call-contact" href="tel:+234-7033501199"><span className="mdi mdi-phone phone-icon"></span>(+234) 07033501199</a>
             </div>
         </div>
         <div className="contact-hospital">

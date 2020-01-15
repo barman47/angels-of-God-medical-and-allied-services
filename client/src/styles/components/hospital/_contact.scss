@@ -1,6 +1,7 @@
 .hospital-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: $lg;
 
     .contact-hospital {
         background-position: top;
@@ -16,6 +17,26 @@
         padding: $md;
         width: 100%;
         height: 100%;
+    }
+
+    .contact-hospital:first-child {
+        a.call-contact {
+            border: 1px solid $white;
+            border-radius: $button-radius;
+            color: $white;
+            margin: $normal auto;
+            text-align: center;
+            width: 65%;
+        }
+        
+        a.call-contact:visited {
+            color: $white;
+        }
+        
+        a.call-contact:hover {
+            background-color: $white;
+            color: $primary-color;
+        }
     }
 
     .contact-hospital:last-child {
@@ -95,5 +116,16 @@
 
     .contact-hospital .contact-info + button  {
         margin-top: $sm;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .contact-hospital:first-child a.call-contact {
+        margin: $normal 0 !important;
+        width: 80% !important;
+    }
+
+    .contact-info + button {
+        width: 80% !important;
     }
 }

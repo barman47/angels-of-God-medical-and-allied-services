@@ -15,9 +15,10 @@ a.call-contact {
     border-radius: $button-radius;
     color: $white;
     margin: $normal auto;
-    padding-top: $normal;
-    padding-bottom: $normal;
+    padding-top: $xs;
+    padding-bottom: $xs;
     width: 20%;
+    transition: 0.3s linear all;
 }
 
 a.call-contact:visited {
@@ -27,6 +28,11 @@ a.call-contact:visited {
 a.call-contact:hover {
     background-color: $white;
     color: $primary-color;
+}
+
+.phone-icon {
+    font-size: $sm;
+    margin-right: $normal;
 }
 
 .sidenav-overlay {
@@ -149,5 +155,17 @@ button.disable {
 
     .show {
         display: flex !important;
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    a.call-contact {
+        width: 30%;      
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    a.call-contact {
+        width: 65%;     
     }
 }

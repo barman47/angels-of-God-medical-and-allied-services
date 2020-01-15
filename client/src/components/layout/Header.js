@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import logo from '../../assets/img/logo.png';
+
 const Header = (props) => {
     useEffect(() => {
         const elems = document.querySelectorAll('.sidenav');
@@ -20,7 +22,9 @@ const Header = (props) => {
             <nav>
                 <div className="nav-wrapper">
                     <Link to="#" className="sidenav-trigger" data-target="mobile-menu"><span className="mdi mdi-menu mdi-24px menu-icon"></span></Link>
-                    <a href="/" className="brand-logo">Logo</a>
+                    <Link to="/" className="brand-logo">
+                        <img className="logo" src={logo} alt="Angels of God Medical and Allied Services Logo"/>
+                    </Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/admissions">Admissions</Link></li>

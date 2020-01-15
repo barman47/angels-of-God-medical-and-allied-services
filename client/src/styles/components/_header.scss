@@ -3,3 +3,17 @@ nav {
     padding-left: $md;
     padding-right: $md;
 }
+
+.logo {
+    height: 3.5rem;
+    width: $lg;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: $md-breakpoint) {
+    nav .brand-logo {
+        left: 90%;
+    }
+}
+
+// @media () {}
