@@ -1,0 +1,59 @@
+.admission-advert {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: $sm;
+    padding: $md;
+
+    .admission-advert-container {
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        margin-top: -5.6rem;
+        padding: $sm 0 $sm $normal;
+    }
+
+    .admission-advert-container:first-child {
+        background-color: #e94086;
+    }
+    .admission-advert-container:nth-child(2) {
+        background-color:#00aee0;
+    }
+    .admission-advert-container:last-child {
+        background-color:#e163e4;
+    }
+
+    .admission-advert-container span:first-child {
+        color: $white;
+        font-size: $lg;
+    }
+
+    .admission-advert-container div {
+        padding-top: $xs;
+        padding-left: $normal;
+        padding-bottom: $normal;
+    }
+
+    .admission-advert-container div h6{
+        color: $white;
+        font-size: $sm;
+        font-weight: $subtitle-weight;
+    }
+
+    .admission-advert-container div p {
+        color: $off-white;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .admission-advert {
+        grid-template-columns: 1fr;
+        row-gap: 10rem;
+    }   
+}
+
+@media (max-width: $md-breakpoint) {
+    .admission-advert {
+        grid-template-columns: 1fr;
+        row-gap: $xxlg;
+    }   
+}

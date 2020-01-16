@@ -9,8 +9,77 @@
 
     .banner-overlay {
         // background-color: transparentize($blue, 0.8);
-        background-color: transparentize($off-black, 0.5);
+        background-color: rgb(4, 9, 30, 0.5);
+        // background-color: transparentize($off-black, 0.5);
+        padding-top: 10rem;
         height: 100%;
         width: 100%;
+    }
+
+    .banner-overlay section {
+        color: $white;
+        padding-left: $xlg;
+        padding-right: $xlg;
+    }
+
+    .banner-overlay section h2 {
+        color: $white;
+        font-weight: $title-weight;
+        margin: 0;
+    }
+
+    .banner-overlay section p {
+        margin-bottom: $xxlg;
+        margin-top: $lg;
+    }
+
+    .banner-overlay section a {
+        background-color: $secondary-color;
+        color: $white;
+        border-radius: 3px;
+        box-shadow: $shadow;
+        padding: $sm $lg;
+        transition: 0.3s linear all;
+    }
+
+    .banner-overlay section a:visited {
+        color: $white;
+    }
+
+    .banner-overlay section a:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .admission-banner .banner-overlay {
+        padding-top: 30rem !important;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .admission-banner .banner-overlay {
+        padding-top: 20rem !important;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .admission-banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .admission-banner .banner-overlay {
+        padding-top: $lg !important;
+    }
+
+    .banner-overlay section {
+        padding-left: $sm !important;
+        padding-right: $sm !important;
+    }
+
+    .banner-overlay section h2 {
+        font-size: $md;
     }
 }
