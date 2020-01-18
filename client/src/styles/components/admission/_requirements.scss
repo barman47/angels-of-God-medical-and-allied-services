@@ -1,0 +1,80 @@
+.requirements {
+    background-color: $off-white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: $sm;
+    padding-bottom: $xlg;
+
+    h4 {
+        font-weight: $subtitle-weight;
+    }
+
+    ul {
+        margin-top: $sm;
+        margin-bottom: $lg;
+    }
+
+    ul li {
+        line-height: 2;
+    }
+
+    ul li span {
+        position: relative;
+        top: 3px;
+        right: 20px;
+        font-size: $sm;
+        color: $primary-color;
+    }
+
+    a {
+        background-color: $secondary-color;
+        border-radius: 3px;
+        color: $off-white;
+        margin-top: $md;
+        padding: $normal $xlg;
+        transition: 0.3s linear all;
+    }
+
+    a:visited {
+        color: $off-white;
+        box-shadow: $shadow;
+    }
+
+    a:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .requirements {
+        display: block !important;
+        padding-left: $md;
+        padding-right: $normal;
+    }
+
+    .requirements h4 {
+        font-size: 1.8rem;
+    }
+
+    .requirements p {
+        font-size: $normal;
+    }
+
+    .requirements ul {
+        margin-bottom: $lg !important;
+    }
+
+    .requirements ul li {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .requirements ul li span {
+        right: 10px;
+    }
+
+    .requirements div {
+        text-align: center;
+    }
+}
