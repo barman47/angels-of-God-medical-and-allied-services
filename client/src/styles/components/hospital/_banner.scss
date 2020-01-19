@@ -17,6 +17,7 @@
 
     p {
         color: $off-white;
+        margin-bottom: $lg;
         margin-top: $lg;
     }
 
@@ -24,7 +25,7 @@
         margin-left: $xlg;
     }
 
-    button {
+    a {
         background-color: $secondary-color;
         border: none;
         border-radius: 3px;
@@ -33,10 +34,50 @@
         box-shadow: $shadow;
         font-family: $quicksand;
         padding: $sm;
-        margin-top: $lg;
         transition: 0.3s linear all;
     }
-    button:hover {
+
+    a:visited {
+        color: $off-white;
+    }
+
+    a:hover {
         background-color: darken($secondary-color, 10%);
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .banner {
+        display: block;
+        padding-top: $xxxlg;
+    }
+
+    .banner p {
+        font-size: $md;
+        margin-bottom: $xxxlg !important;
+        margin-top: $xxxlg !important;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .banner p {
+        font-size: $sm;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .banner {
+        display: block;
+        padding-top: $xlg;
+    }
+
+    .banner p {
+        font-size: $sm;
+        margin-bottom: $xlg !important;
+        margin-top: $xlg !important;
+    }
+
+    .banner div {
+        margin: 0 $sm;
     }
 }

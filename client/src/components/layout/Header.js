@@ -30,7 +30,6 @@ const Header = (props) => {
                         <li><Link to="/admissions">Admissions</Link></li>
                         <li><Link to="/medical-center">Medical Center</Link></li>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="/services">Services</Link></li>
                     </ul>
                 </div>
             </nav>
@@ -40,7 +39,6 @@ const Header = (props) => {
                 <li><Link to="/admissions" className="mobile-link">Admissions</Link></li>
                 <li><Link to="/medical-center" className="mobile-link">Medical Center</Link></li>
                 <li><Link to="/about" className="mobile-link">About</Link></li>
-                <li><Link to="/services" className="mobile-link">Services</Link></li>
             </ul>
         </div>
     );

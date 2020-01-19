@@ -71,7 +71,7 @@
         flex-direction: column;
     }
 
-    .contact-info + button {
+    .contact-info + a {
         background-color: transparent;
         border: 1px solid $off-white;
         color: $off-white;
@@ -80,10 +80,16 @@
         font-family: $quicksand;
         padding-bottom: $normal;
         padding-top: $normal;
+        text-align: center;
         width: 60%;
         transition: 0.3s linear all;
     }
-    .contact-info + button:hover {
+
+    .contact-info + a:visited {
+        color: $off-white;
+    }
+
+    .contact-info + a:hover {
         background-color: $white;
         color: $primary-color;
     }
@@ -97,11 +103,19 @@
     .contact-info h5, .contact-info p {
         align-self: center;
     }
+
+    .contact-info + a.booking { 
+        margin-top: -$xlg !important;
+    }
 }
 
 @media (max-width: $md-breakpoint) {
     .hospital-contact {
         grid-template-columns: 1fr;
+    }
+
+    .contact-info + a.booking { 
+        margin-top: $md !important;
     }
 }
 
@@ -117,15 +131,13 @@
     .contact-hospital .contact-info + button  {
         margin-top: $sm;
     }
-}
 
-@media (max-width: $sm-breakpoint) {
     .contact-hospital:first-child a.call-contact {
         margin: $normal 0 !important;
         width: 80% !important;
     }
 
-    .contact-info + button {
+    .contact-info + button, .contact-info + a.booking {
         width: 80% !important;
     }
 }
