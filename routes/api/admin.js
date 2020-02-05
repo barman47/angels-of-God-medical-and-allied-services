@@ -176,6 +176,5 @@ router.get('/studentProfile/:id', passport.authenticate('jwt-admin', { session: 
         })
         .catch(err => console.error(err));
 });
-module.exports = router;
 
 module.exports = router;

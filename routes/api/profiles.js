@@ -11,7 +11,6 @@ const validateProfileInput = require('../../utils/validation/profile');
 // @desc add user profile
 // @access Private
 router.post('/:id', passport.authenticate('jwt-student', { session: false }), (req, res) => {
-    console.log('request ', req.params.id);
     const { errors, isValid } = validateProfileInput(req.body);
 
     if (!isValid) {

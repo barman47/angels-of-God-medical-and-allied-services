@@ -88,7 +88,7 @@ class Dashboard extends Component {
                     <section className="dashboard-content">
                         <div className="admin-section">
                             <h3>Students Application List</h3>
-                            {students ? ( 
+                            {students.length > 0 ? ( 
                                 <table>
                                     <thead>
                                         <tr>

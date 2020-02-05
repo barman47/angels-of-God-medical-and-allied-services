@@ -88,7 +88,7 @@ class Bookings extends Component {
                     <section className="dashboard-content">
                         <div className="admin-section">
                             <h3>Patient Bookings</h3>
-                            {patients ? ( 
+                            {patients.length > 0 ? ( 
                                 <table>
                                     <thead>
                                         <tr>

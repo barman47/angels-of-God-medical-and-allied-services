@@ -172,8 +172,7 @@ const mapStateToProps = (state) => ({
 
 AdminProfile.propTypes = {
     changePassword: PropTypes.func.isRequired,
-    logoutAdmin: PropTypes.func.isRequired,
-    updateAdminData: PropTypes.func.isRequired
+    logoutAdmin: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, { changePassword, logoutAdmin })(AdminProfile);

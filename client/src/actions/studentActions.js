@@ -126,12 +126,12 @@ export const registerStudent = (student, history) => (dispatch) => {
 };
 
 export const getStudents = () => (dispatch) => {
-    axios.get('/api/students/all')
+    axios.get('/api/students')
         .then(res => dispatch({
             type: SET_STUDENTS,
             payload: res.data
         }))
-        .catch(err => console.log(err));
+        .catch(err => console.error(err));
 };
 
 export const togglePayment = (id) => (dispatch) => {

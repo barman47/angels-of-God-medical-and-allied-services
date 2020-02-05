@@ -25,7 +25,7 @@ router.get('/:id', passport.authenticate('jwt-student', { session: false }), (re
 // @route GET /api/students/all
 // @desc Get all students
 // @access Private
-router.get('/all', passport.authenticate('jwt-admin', { session: false }), (req, res) => {
+router.get('/', passport.authenticate('jwt-admin', { session: false }), (req, res) => {
     Student.find({})
         .then(students => {
             if (!students) {

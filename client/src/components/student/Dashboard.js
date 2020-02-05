@@ -64,7 +64,7 @@ class Dashboard extends Component {
                                 </li>
                                 <li>Make the required payment to the account details</li>
                                 <li>Provide the necessary documents <Link to={`/admissions/students/${student.id}/documents`}>here</Link></li>
-                                {hasPaid && <li><a href={form} target="_blank">Download Visa Form</a></li>}
+                                {hasPaid && <li><a href={form} target="_blank" rel="noopener noreferrer">Download Visa Form</a></li>}
                             </ol>
                             <p>For further inquiries, call any of the following numbers:</p>
                             <p>+2348034335207, +2348036662434, +639458656032, +2347033501199, +447424275204, +639236308027</p>

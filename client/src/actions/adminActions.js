@@ -31,7 +31,7 @@ export const loginAdmin = (admin, history) => (dispatch) => {
 
             // Set current admin
             dispatch(setCurrentAdmin(decoded));
-            history.push('/admin/dashboard');
+            history.push('/admin/students');
 
         })
         .catch(err => {

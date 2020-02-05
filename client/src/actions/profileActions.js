@@ -1,6 +1,6 @@
 import { SET_PROFILE, GET_ERRORS } from './types';
 import axios from 'axios';
-
+import M from 'materialize-css';
 
 export const getStudentProfile = (id) => (dispatch) => {
     axios.get(`/api/profiles/${id}`)
@@ -25,7 +25,10 @@ export const getStudentProfile = (id) => (dispatch) => {
 export const setStudentProfile = (profile, studentId) => (dispatch) => {
     axios.post(`/api/profiles/${studentId}`, profile)
         .then(res => {
-            console.log(res);
+            M.toast({
+                html: 'Profile Updated',
+                classes: 'toast-valid'
+            });
         })
         .catch(err => {
             dispatch({

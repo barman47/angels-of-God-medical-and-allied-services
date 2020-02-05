@@ -52,7 +52,7 @@ const Header = (props) => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/admissions">Admissions</Link></li>
             <li><Link to="/medical-center">Medical Center</Link></li>
-            {admin && (<li><Link to="/admin/dashboard">Admin</Link></li>)}
+            {admin && (<li><Link to="/admin/students">Admin</Link></li>)}
             <li><Link to="/about">About</Link></li>
         </>
     );
@@ -62,7 +62,7 @@ const Header = (props) => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/admissions">Admissions</Link></li>
             <li><Link to="/medical-center">Medical Center</Link></li>
-            <li><Link to="/admissions/login">Student Login</Link></li>
+            {/* <li><Link to="/admissions/login">Student Login</Link></li> */}
             <li><Link to="/about">About</Link></li>
         </>
     );
@@ -94,7 +94,7 @@ const Header = (props) => {
                 <li><Link to="/admissions" className="mobile-link">Admissions</Link></li>
                 <li><Link to="/medical-center" className="mobile-link">Medical Center</Link></li>
                 {props.student.authenticated ? (<li><Link className="mobile-link" to={`/admissions/students/${student.id}`}>Dashboard</Link></li>) : null}
-                {props.admin !== null ? (<li><Link className="mobile-link" to="/admin/dashboard">Admin</Link></li>) : null}
+                {props.admin !== null ? (<li><Link className="mobile-link" to="/admin/students">Admin</Link></li>) : null}
                 <li><Link to="/about" className="mobile-link">About</Link></li>
             </ul>
         </div>

@@ -341,7 +341,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio" 
                                     id="male" 
-                                    checked={profile.sex === 'male' ? 'checked' : false}
+                                    // checked={profile.sex === 'male' ? 'checked' : false}
                                     className="with-gap validate" 
                                     name="sex"
                                     value="male"
@@ -354,7 +354,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio"
                                     id="female" 
-                                    checked={profile.sex === 'female' ? 'checked' : false}
+                                    // checked={profile.sex === 'female' ? 'checked' : false}
                                     className="with-gap validate" 
                                     name="sex" 
                                     value="female"
@@ -373,7 +373,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio" 
                                     id="single" 
-                                    checked={profile.maritalStatus === 'single' ? 'checked' : false}
+                                    // checked={profile.maritalStatus === 'single' ? 'checked' : false}
                                     className="with-gap validate" 
                                     name="maritalStatus"
                                     value="single"
@@ -386,7 +386,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio" 
                                     id="married" 
-                                    checked={profile.maritalStatus === 'married' ? 'checked' : false}
+                                    // checked={profile.maritalStatus === 'married' ? 'checked' : false}
                                     className="with-gap validate" 
                                     name="maritalStatus"
                                     value="married"
@@ -399,7 +399,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio" 
                                     id="divorced" 
-                                    checked={profile.maritalStatus === 'divorced' ? 'checked' : false}
+                                    // checked={profile.maritalStatus === 'divorced' ? 'checked' : false}
                                     className="with-gap validate" 
                                     name="maritalStatus"
                                     value="divorced"
@@ -449,7 +449,7 @@ class DataForm extends Component {
                             <label htmlFor="christianity">
                                 <input 
                                     type="radio" 
-                                    checked={profile.religion === 'christianity' ? "checked" : false}
+                                    // checked={profile.religion === 'christianity' ? "checked" : false}
                                     id="christianity" 
                                     className="with-gap validate" 
                                     name="religion"
@@ -463,7 +463,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio" 
                                     id="islam" 
-                                    checked={profile.religion === 'islam' ? "checked" : false}
+                                    // checked={profile.religion === 'islam' ? "checked" : false}
                                     className="with-gap validate" 
                                     name="religion"
                                     value="islam"
@@ -476,7 +476,7 @@ class DataForm extends Component {
                                 <input 
                                     type="radio" 
                                     id="others" 
-                                    checked={profile.religion === 'others' ? "checked" : false}
+                                    // checked={profile.religion === 'others' ? "checked" : false}
                                     className="with-gap validate" 
                                     name="religion"
                                     value="others"
