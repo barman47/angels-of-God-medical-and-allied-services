@@ -23,7 +23,7 @@ const Slider = () => {
                     <img src={slide1} alt="Slide 1" />
                     <div className="first-slide caption center-align">
                         <h3 className="slide1-caption">Welcome to Angels of God Medical Center <br />and Allied Services</h3>
-                        <Link to="/">Read More</Link>
+                        <Link to="/about">Read More</Link>
                     </div>
                 </li>
                 <li>
@@ -42,7 +42,7 @@ const Slider = () => {
                     <img src={slide4} alt="Slide 4" />
                     <div className="caption center-align">
                         <h3 className="slide4-caption">Globally recognized high educational standard</h3>
-                        <Link to="/">Apply for Admission</Link>
+                        <Link to="/admissions/apply">Apply for Admission</Link>
                     </div>
                 </li>
                 <li>

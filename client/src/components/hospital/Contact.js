@@ -19,7 +19,7 @@ const Contact = () => {
                         <h5>Make an Online Appointment</h5>
                         <p>Schedule an appointment from your comfort zone</p>
                     </div>
-                    <Link className="booking" to="/patients/booking">Make An Appointment</Link>
+                    <Link className="booking" to="">Make An Appointment</Link>
                 </div>
             </div>
         </section>

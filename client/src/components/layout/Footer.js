@@ -10,7 +10,7 @@ const Footer = (props) => {
                 <li><Link to="/admissions">Admissions</Link></li>
                 <li><Link to="/medical-center">Medical Center</Link></li>
                 <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
+                {/* <li><Link to="/services">Services</Link></li> */}
             </ul>
         </footer>
     );

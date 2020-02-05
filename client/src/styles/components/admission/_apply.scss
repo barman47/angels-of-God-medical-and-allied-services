@@ -1,0 +1,22 @@
+.apply-form {
+    // border: 1px solid $off-white;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    margin: $md auto;
+    padding: 0 $md;
+    width: 50%;
+
+    button {
+        background-color: $secondary-color;
+    }
+    button:hover {
+        background-color: darken($secondary-color, 10%);
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .apply-form {
+        padding: 0 $xs;
+        width: 90%;
+    }
+}

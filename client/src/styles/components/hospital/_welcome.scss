@@ -36,6 +36,10 @@
         font-weight: $subtitle-weight;
     }
 
+    div:last-child ul li {
+        margin-bottom: $sm;
+    }
+
     div:last-child .welcome-list-icon {
         color: $secondary-color;
         margin-right: $normal;

@@ -1,0 +1,41 @@
+.student-profile {
+    border: 1px solid darken($off-white, 10%);
+    border-radius: 3px;
+    line-height: 2;
+    margin: $sm auto;
+    padding-left: $md;
+    padding-right: $md;
+    width: 90%;
+
+    h5 {
+        color: $primary-color;
+        font-weight: 600;
+    }
+
+    .profile-section, .school-section {
+        border-bottom: 1px solid darken($off-white, 10%);
+        padding-bottom: $sm;
+    }
+
+    .student-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .school-info, .referee-info {
+        margin-bottom: $sm;
+    }
+
+    .school-info div , .referee-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    p {
+        font-weight: 600;
+    }
+
+    p span {
+        font-weight: normal;
+    }
+}

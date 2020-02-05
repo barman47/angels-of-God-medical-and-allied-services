@@ -1,0 +1,17 @@
+.dashboard {
+    .profile-form-header {
+        color: $primary-color;
+        text-align: center;
+    }
+
+    .save-profile {
+        margin-left: $normal;
+        width: 50%;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .dashboard-content .save-profile {
+        width: 90%;
+    }
+}

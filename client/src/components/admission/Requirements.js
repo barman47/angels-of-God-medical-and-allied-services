@@ -15,7 +15,7 @@ const Requirements = () => {
                 <li><span className="mdi mdi-checkbox-marked-outline"></span>Quarantine Medical Examination Results</li>
             </ul>
             <div>
-                <Link to="">Apply Now</Link>
+                <Link to="/admissions/apply">Apply Now</Link>
             </div>
         </section>
     );

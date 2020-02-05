@@ -1,0 +1,135 @@
+.dashboard {
+    background-color: $off-white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding-left: $sm;
+    padding-right: $lg;
+
+    aside {
+        background-color: $white;
+        height: 60%;
+        margin-bottom: $sm;
+        margin-top: $sm;
+        padding-top: $normal;
+        position: fixed;
+        width: 20%;
+    }
+
+    ul:not(.browser-default)>li {
+        margin-bottom: $xs;
+        padding: $xs $normal;
+    }
+
+    aside ul li a {
+        color: $off-black;    
+        font-weight: bold;    
+    } 
+    
+    aside ul li a:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+
+    .dashboard-content {
+        background-color: $white;
+        margin-bottom: $sm;
+        margin-left: 23%;
+        margin-top: $sm;
+        padding-top: $normal;
+        width: 80%;
+    }
+    
+    .admission-steps {
+        padding-left: $lg;
+        padding-bottom: 10rem;
+    }
+
+    .admission-steps h5 {
+        color: $primary-color;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .admission-steps ol li {
+        line-height: 2;
+    }
+
+    .form-header {
+        color: $primary-color;
+        margin-left: $sm;
+    }
+
+    .edit-profile {
+        color: $blue;
+        cursor: pointer;
+        margin-left: $sm;
+    }
+    .edit-profile:hover {
+        text-decoration: underline;
+    }
+
+    .profile-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .profile-input {
+        margin-left: $sm;
+        margin-right: $sm;
+    }
+
+    button {
+        background-color: $secondary-color;
+        border: none;
+        border-radius: 3px;
+        box-shadow: $shadow;
+        color: $white;
+        cursor: pointer;
+        font-family: $quicksand;
+        padding-bottom: $normal;
+        padding-top: $normal;
+        transition: 0.3s linear all;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: darken($secondary-color, 5%);
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .dashboard aside {
+        height: 30% !important;
+    }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .dashboard {
+        border-radius: 3px;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        padding-left: $normal;
+        padding-right: $normal;
+    }
+
+    aside {
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    .dashboard-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .profile-form {
+        display: block !important;
+    }
+
+    .profile-input {
+        margin-left: $sm;
+        margin-right: $sm;
+    }
+}

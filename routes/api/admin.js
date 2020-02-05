@@ -24,14 +24,14 @@ router.post('/register', (req, res) => {
     }
 
     const admin = new Admin({
-        username: req.body.username,
+        email: req.body.email,
         password: req.body.password
     });
 
-    Admin.findOne({ username: admin.username })
+    Admin.findOne({ email: admin.email })
         .then(returnedAdmin => {
             if (returnedAdmin) {
-                errors.username = 'Admin already exists!';
+                errors.email = 'Admin already exists!';
                 return res.status(501).json(errors)
             }
 
@@ -65,13 +65,13 @@ router.post('/login', (req, res) => {
         return res.status(400).json(errors);
     }
 
-    const username = req.body.username;
+    const email = req.body.email;
     const password = req.body.password;
 
-    Admin.findOne({ username })
+    Admin.findOne({ email })
         .then(admin => {
             if (!admin) {
-                errors.username = 'Admin not found!';
+                errors.email = 'Admin not found!';
                 res.status(404).json(errors);
             }
 
@@ -81,12 +81,12 @@ router.post('/login', (req, res) => {
                         // Admin matched
                         const payload = {
                             id: admin.id,
-                            username: admin.username,
+                            email: admin.email,
                             createdAt: admin.createdAt
                         }; // JWT Payload
 
                         // Sign the token
-                        jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
+                        jwt.sign(payload, keys.secretOrKey, { expiresIn: '7 days' }, (err, token) => {
                             // res.json({...payload, token: `Bearer ${token}`});
                             res.json({
                                 success: true,
@@ -120,7 +120,7 @@ router.put('/changePassword', passport.authenticate('jwt-admin', { session: fals
     Admin.findOne({ _id: req.user.id })
         .then(admin => {
             if (!admin) {
-                errors.username = 'Admin not found!';
+                errors.email = 'Admin not found!';
                 return res.status(404).json(errors);
             }
 
@@ -161,5 +161,21 @@ router.put('/changePassword', passport.authenticate('jwt-admin', { session: fals
         })
         .catch(err => console.log(err));
 });
+
+// GET profile
+// @route GET /api/profiles/:id
+// @desc find profile by user id
+// @access Private
+router.get('/studentProfile/:id', passport.authenticate('jwt-admin', { session: false }), (req, res) => {
+    Profile.findOne({ user: req.params.id })
+        .then(profile => {
+            if (!profile) {
+                return res.status(404).json({ msg: 'Profile not found' });
+            } 
+            res.json(profile);
+        })
+        .catch(err => console.error(err));
+});
+module.exports = router;
 
 module.exports = router;

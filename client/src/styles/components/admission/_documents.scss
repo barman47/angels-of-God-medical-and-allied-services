@@ -1,0 +1,59 @@
+.required-documents {
+    h5 {
+        color: $primary-color !important;
+        text-align: center;
+    }
+    
+        ul {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: $sm;
+            margin-bottom: $lg;
+            width: 50%;
+        }
+    
+        ul li {
+            line-height: 2;
+        }
+    
+        ul li span {
+            position: relative;
+            top: 3px;
+            right: 20px;
+            font-size: $sm;
+            color: $primary-color;
+        }
+}
+
+@media (max-width: $sm-breakpoint) {
+    .requirements {
+        display: block !important;
+        padding-left: $md;
+        padding-right: $normal;
+    }
+
+    .requirements h4 {
+        font-size: 1.8rem;
+    }
+
+    .requirements p {
+        font-size: $normal;
+    }
+
+    .requirements ul {
+        margin-bottom: $lg !important;
+    }
+
+    .requirements ul li {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .requirements ul li span {
+        right: 10px;
+    }
+
+    .requirements div {
+        text-align: center;
+    }
+}

@@ -17,9 +17,12 @@ const Welcome = () => (
             <ul>
                 <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Antenal and post natal care.</li>
                 <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Pharmaceutical services.</li>
-                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Intersive care and surgical unit.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Intensive care and surgical unit.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Laboratory and radiology services.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Optic and dental services.</li>
+                <li><span className="mdi mdi-check-circle-outline welcome-list-icon"></span>Emergency and rehabilitative services.</li>
             </ul>
-            <Link to="">Learn More</Link>
+            <Link to="/about">Learn More</Link>
         </div>
     </section>
 );

@@ -1,0 +1,72 @@
+.login {
+    font-family: $quicksand;
+
+    .login-form {
+        border-radius: 5px;
+        box-shadow: $shadow;
+        margin: $lg auto;
+        width: 50%;
+        padding: $xs $md $sm $md;
+    }
+
+    .login-form h3 {
+        color: $off-black;
+        border-bottom: 1px solid darken($off-white, 15%);
+        font-size: $md;
+        padding-bottom: $sm;
+        text-align: center;
+    }
+
+    button {
+        background-color: $secondary-color !important;
+        border: none;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        color: $off-white;
+        cursor: pointer;
+        font-family: $quicksand;
+        padding: $normal 0;
+        width: 100%;
+        transition: 0.3s linear all;
+    }
+
+    button:hover {
+        background-color: darken($secondary-color, 5%);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    button.login {
+        background-color: $green;
+        margin-top: $sm;
+    }
+    button.login:hover {
+        background-color: darken($green, 5%);
+        box-shadow: $shadow;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: $lg-breakpoint) {
+    .login-form {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: $md-breakpoint) {
+    .login-form {
+        width: 90vw !important;
+        padding-bottom: $lg !important;
+        padding-left: $xs !important;
+        padding-right: $xs !important;
+    }
+
+    .login-form h3 {
+        font-size: $sm !important;
+    }
+}

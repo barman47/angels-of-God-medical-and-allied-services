@@ -7,21 +7,21 @@ const Advert = () => {
                 <span className="mdi mdi-certificate"></span>
                 <div>
                     <h6>Globally Recognized Certificate</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis mollitia quibusdam, debitis praesentium nemo est itaque tempora temporibus repudiandae.</p>
+                    <p>Certicates from our universities are universally  recognized,  and eligible for utilization worldwide.</p>
                 </div>
             </div>
             <div className="admission-advert-container">
                 <span className="mdi mdi-speedometer"></span>
                 <div>
                     <h6>Express Visa</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis mollitia quibusdam, debitis praesentium nemo est itaque tempora temporibus repudiandae.</p>
+                    <p>We guarantee an express entry and study visa. You don't have to worry about denial of your visa.</p>
                 </div>
             </div>
             <div className="admission-advert-container">
                 <span className="mdi mdi-school"></span>
                 <div>
                     <h6>Express Admission</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nobis mollitia quibusdam, debitis praesentium nemo est itaque tempora temporibus repudiandae.</p>
+                    <p>We provide admission to schools that are recognized worldwide for their high standard of education and quality of service.</p>
                 </div>
             </div>
         </div>

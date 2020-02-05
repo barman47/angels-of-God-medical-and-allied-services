@@ -1,10 +1,14 @@
 import { combineReducers } from 'redux';
-import quizReducer from './quizReducer';
 import errorsReducer from './errorsReducer';
-import authReducer from './authReducer';
+import studentReducer from './studentReducer';
+import profileReducer from './profileReducer';
+import adminReducer from './adminReducer';
+import patientReducer from './patientReducer';
 
 export default combineReducers({
-    auth: authReducer,
-    quiz: quizReducer,
-    errors: errorsReducer
+    admin: adminReducer,
+    student: studentReducer,
+    patients: patientReducer,
+    errors: errorsReducer,
+    profile: profileReducer
 });

@@ -7,9 +7,10 @@ const Banner = () => {
             <section className="admission-banner">
                 <div className="banner-overlay">
                     <section>
-                        <h2>Hello Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquam ipsam at quis temporibus obcaecati ab similique repellat vitae sapiente?</p>
-                        <Link to="">Get Started</Link>
+                        <h2>Study your dream Course Abroad</h2>
+                        <p>Avail yourself of the opportunity to study at anyone our first class universities recognized globally for their ultimate services.</p>
+                        <Link to="/admissions/apply">Get Started</Link>
+                        <Link to="/admissions/login">Process Application</Link>
                     </section>
                 </div>
             </section>
