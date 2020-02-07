@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const path = require('path');
-const secure = require('express-force-https');
+// const secure = require('express-force-https');
 const { database_URI } = require('./config/keys');
 
 const admin = require('./routes/api/admin');
@@ -30,7 +30,7 @@ app.use(passport.initialize());
 // Passport config
 require('./config/passport')
 
-app.use(secure);
+// app.use(secure);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(publicPath));
